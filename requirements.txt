@@ -1,0 +1,12 @@
+asgiref==3.3.1
+Django==3.1.5
+django-admin-inline-paginator==0.1.1
+django-debug-toolbar==3.2
+django-rest-framework==0.1.0
+djangorestframework==3.12.2
+Pillow==8.1.0
+psycopg2==2.8.6
+python-monkey-business==1.0.0
+pytz==2020.5
+six==1.15.0
+sqlparse==0.4.1

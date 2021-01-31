@@ -1,11 +1,10 @@
 from django.db import models
 from profiles.models import Authored
-from .topic import Topic
 from .time_stamped import TimeStamped
 
 
 class Message(Authored, TimeStamped):
-    topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
+    topic = models.ForeignKey('Topic', on_delete=models.CASCADE)
     text = models.TextField()
 
     def __str__(self):

@@ -66,8 +66,8 @@ class TopicCreationSerializer(serializers.ModelSerializer):
         message = validated_data.pop('message')
         topic = Topic.objects.create(**validated_data,
                                      user=self.context['request'].user,
-                                     subcategory_id=self.context['pk'])
-        Message.objects.create(text=message, topic=topic, user=self.context['request'].user)
+                                     subcategory_id=self.context['pk'],
+                                     text=message)
         return topic
 
 

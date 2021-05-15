@@ -8,7 +8,6 @@ from rest_framework.views import APIView, Response
 from rest_framework.generics import ListAPIView
 from django.db.models import Prefetch, Max
 from django.http import HttpResponseBadRequest, HttpResponse
-from rest_framework.viewsets import ReadOnlyModelViewSet
 from rest_framework import permissions
 from rest_framework import status
 
